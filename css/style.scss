@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;padding: 0;margin: 0;
+  &:after,
+  &:before{
+    box-sizing: border-box;padding: 0;margin: 0;
+  }
+}
+.door__js{
+  width: 100%;
+  display: block;
+  .interiero{
+    width: 29%;
+    height: 539px;
+    border: 1px solid #C8C8C8;
+    margin: 0 7px 0 0;
+    background-color: #F0F0F0;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    #fabHead {
+      display: block;
+      background: #ff7e00 none repeat scroll 0 0;
+      color: #fff;
+      padding: 10px;
+      font-weight: 700;
+      font-size: 21px;
+      text-align: center;
+    }
+    #intWarp {
+      height: 430px;
+      overflow-y: scroll;
+      .uploadInter {
+        max-height: 100px;
+        width: 155px;
+        margin: 8px 3px 4px 8px;
+        opacity: .5;
+        cursor: pointer;
+      }
+    }
+    #fabAdd {
+      display: block;
+      background: #00ba23 none repeat scroll 0 0;
+      color: #fff;
+      padding: 10px;
+      font-weight: 700;
+      font-size: 21px;
+      text-align: center;
+      height: 69px;
+      padding-right: 170px;
+      padding-top: 4px;
+      line-height: 29px;
+    }
+  }
+  .blockz{
+    width: 70%;
+    height: 539px;
+    border: 1px solid #C8C8C8;
+    margin: 0;
+    background-color: #F0F0F0;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    .fon {
+      background: url(interier/28.jpg);
+      background-size: contain;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  }
+}
