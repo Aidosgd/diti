@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/css/jquery-ui.css">
+    <link rel="stylesheet" href="/css/cs-select.css">
+    <link rel="stylesheet" href="/css/cs-skin-border.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -51,11 +54,11 @@
     <div class="blockz">
         <div class="fon" style="filter: blur(0px) brightness(100%) contrast(100%) opacity(100%) saturate(100%);"></div>
         <div class="container boxy ui-draggable ui-draggable-handle ui-resizable"
-             style="background: url(&quot;fotos/aleanza/Hispania%20XXIX%20%D0%BA%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D0%BB%D1%8C.jpg&quot;) 0% 0% / contain no-repeat; position: relative; left: 593px; top: 54px; height: 409px; width: 191px;">
+             style="    background: url(images/begin.jpg);position: relative;">
             <div class="reset"></div>
             <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
             <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
-            <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"
+            <div title="Scale" class="transformable-handle-scale transformable-handle ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"
                  style="z-index: 90;"></div>
             <div title="Rotate"
                  class="transformable-handle-rotate transformable-handle ui-icon ui-icon-arrowrefresh-1-s"
@@ -138,10 +141,51 @@
         </div>
     </div>
 </div>
-
-<div id="draggable" class="ui-widget-content">
-    <p>Drag me around</p>
+<div id="fabHead" style="display:inline-block;width:40%;padding: 5px 3px 5px 10px;">
+    Выберите фабрику:
+    <select class="cs-select cs-skin-border">
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+    </select>
 </div>
+<div class="fabinfo">Затем выберите одну из дверей, и она появится в интерьере</div>
+<center>
+    <div id="existingImges">
+        <img class="uploadImage" data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/hispania-xxiv/"
+             src="fotos/aleanza/Hispania%20XXIV%20%D0%BA%D1%83%D0%B1%D0%B0%20%D0%BC%D0%B0%D1%85%D0%B0%D0%B3%D0%BE%D0%BD.jpg"><img
+            class="uploadImage" data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/hispania-xxiv/"
+            src="fotos/aleanza/Hispania%2024%20%D0%BA%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D0%BB%D1%8C.jpg"><img
+            class="uploadImage" data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/hispania-xxviii/"
+            src="fotos/aleanza/Hispania%2028%20%D0%BA%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D0%BB%D1%8C.jpg"><img
+            class="uploadImage" data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/hispania-xxviii/"
+            src="fotos/aleanza/Hispania%2028%20%D0%BA%D1%83%D0%B1%D0%B0.jpg"><img class="uploadImage"
+                                                                                  data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/hispania-xxix/"
+                                                                                  src="fotos/aleanza/Hispania%20XXIX%20%D0%9A%D1%83%D0%B1%D0%B0%20%D0%BC%D0%B0%D1%85%D0%B0%D0%B3%D0%BE%D0%BD.jpg"><img
+            class="uploadImage" data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/hispania-xxix/"
+            src="fotos/aleanza/Hispania%20XXIX%20%D0%BA%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D0%BB%D1%8C.jpg"><img
+            class="uploadImage" data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/ferrata-xv/"
+            src="fotos/aleanza/Ferrata%2015%20%D0%B4%D1%83%D0%B1%20%D1%81%D0%B5%D1%80%D1%8B%D0%B9.jpg"><img
+            class="uploadImage" data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/ferrata-xv/"
+            src="fotos/aleanza/Ferrata%2015%20%D0%BE%D1%80%D0%B5%D1%85%20%D0%B0%D1%84%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9.jpg"><img
+            class="uploadImage" data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/ferrata-xv/"
+            src="fotos/aleanza/Ferrata%2015%20%D0%BE%D1%80%D0%B5%D1%85%20%D0%BA%D0%B0%D0%BF%D1%83%D1%87%D0%B8%D0%BD%D0%BE.jpg"><img
+            class="uploadImage" data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/ferrata-iii/"
+            src="fotos/aleanza/Ferrata%203.jpg"><img class="uploadImage"
+                                                     data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/ferrata-xvi/"
+                                                     src="fotos/aleanza/Ferratta%2016%20%D0%AF%D1%81%D0%B5%D0%BD%D1%8C%20%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9%20%D0%94%D0%9E.jpg"><img
+            class="uploadImage" data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/ferrata-xiii/"
+            src="fotos/aleanza/Ferrata%2013%20%D0%90%D1%84%D1%80%D0%B8%D0%BA%D0%B0.jpg"><img class="uploadImage"
+                                                                                             data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/ferrata-xiii/"
+                                                                                             src="fotos/aleanza/Ferrata%2013%20%D0%BA%D0%B0%D0%BF%D1%83%D1%87%D0%B8%D0%BD%D0%BE.jpg"><img
+            class="uploadImage" data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/ferrata-xiii/"
+            src="fotos/aleanza/Ferrata%2013%20%D0%A1%D0%B2%D0%B5%D1%82%D0%BB%D1%8B%D0%B9.jpg"><img class="uploadImage"
+                                                                                                   data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/ferrata-xiv/"
+                                                                                                   src="fotos/aleanza/Ferrata%2014%20%D0%90%D1%84%D1%80%D0%B8%D0%BA%D0%B0.jpg"><img
+            class="uploadImage" data-url="//dverionlain.ru/catalog/mezhkomnatnye-dveri/ferrata-xiv/"
+            src="fotos/aleanza/Ferrata%2014%20%D0%BA%D0%B0%D0%BF%D1%83%D1%87%D0%B8%D0%BD%D0%BE.jpg"></div>
+</center>
 
 <script src="/js/jquery.js"></script>
 <script src="/js/jquery-ui.js"></script>
